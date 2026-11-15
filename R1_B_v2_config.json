@@ -1,0 +1,34 @@
+{
+  "version": "R1_B_v2",
+  "frozen_at": "2026-11-14T14:45:42.290308",
+  "description": "R1 con SL ATR 1.5x + trailing 5% post-TP. Validado FULL+OOS.",
+  "parent": "R1_B_v1",
+  "exit": {
+    "stop_loss": "-1.5 * ATR(14)",
+    "trailing_activation": "+5% (high >= entry * 1.05)",
+    "trailing_stop": "5% desde el maximo",
+    "timeout_days": 30
+  },
+  "sizing": {
+    "per_trade": 5000,
+    "max_positions": 20,
+    "max_capital": 100000
+  },
+  "results_full": {
+    "annual_pct": 8.9,
+    "sharpe": 1.48,
+    "max_dd_pct": -6.6,
+    "n_trades": 2698
+  },
+  "results_oos": {
+    "annual_pct": 19.8,
+    "sharpe": 1.51,
+    "max_dd_pct": -12.0,
+    "n_trades": 1356
+  },
+  "warnings": [
+    "DSR ~0.76",
+    "Survivorship bias 1-2% anual",
+    "Paper trading 3-6 meses obligatorio"
+  ]
+}

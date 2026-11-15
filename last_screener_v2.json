@@ -1,0 +1,110 @@
+{
+  "ts": "2026-11-14T14:56:31.290864",
+  "regime": {
+    "name": "BULL",
+    "spy_price": 754.37,
+    "spy_ma200": 729.32
+  },
+  "n_evaluated": 620,
+  "n_signals": 2,
+  "signals": [
+    {
+      "ticker": "NRG",
+      "date": "2026-10-20",
+      "price": 97.84,
+      "stop_price": 94.22,
+      "n_strong": 4,
+      "conditions": [
+        {
+          "name": "ret_5",
+          "value": -0.0809,
+          "threshold": -0.0137,
+          "direction": "low",
+          "ok": true,
+          "strong": true
+        },
+        {
+          "name": "ret_252",
+          "value": -0.4092,
+          "threshold": -0.0519,
+          "direction": "low",
+          "ok": true,
+          "strong": true
+        },
+        {
+          "name": "macd_hist",
+          "value": 0.2626,
+          "threshold": 0.0706,
+          "direction": "high",
+          "ok": true,
+          "strong": true
+        },
+        {
+          "name": "dist_ma_20",
+          "value": -0.0322,
+          "threshold": -0.0162,
+          "direction": "low",
+          "ok": true,
+          "strong": false
+        },
+        {
+          "name": "atr_norm",
+          "value": 0.0247,
+          "threshold": 0.016,
+          "direction": "high",
+          "ok": true,
+          "strong": true
+        }
+      ]
+    },
+    {
+      "ticker": "GPC",
+      "date": "2026-10-20",
+      "price": 123.52,
+      "stop_price": 120.28,
+      "n_strong": 4,
+      "conditions": [
+        {
+          "name": "ret_5",
+          "value": -0.0446,
+          "threshold": -0.0083,
+          "direction": "low",
+          "ok": true,
+          "strong": true
+        },
+        {
+          "name": "ret_252",
+          "value": -0.0759,
+          "threshold": 0.0357,
+          "direction": "low",
+          "ok": true,
+          "strong": true
+        },
+        {
+          "name": "macd_hist",
+          "value": 0.2512,
+          "threshold": 0.1393,
+          "direction": "high",
+          "ok": true,
+          "strong": false
+        },
+        {
+          "name": "dist_ma_20",
+          "value": -0.0391,
+          "threshold": -0.0073,
+          "direction": "low",
+          "ok": true,
+          "strong": true
+        },
+        {
+          "name": "atr_norm",
+          "value": 0.0175,
+          "threshold": 0.0106,
+          "direction": "high",
+          "ok": true,
+          "strong": true
+        }
+      ]
+    }
+  ]
+}
